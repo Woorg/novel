@@ -1,0 +1,64 @@
+mixin first(data)
+    section.first
+        .first__container.container
+
+            .first__slider.slider.swiper
+                .swiper-wrapper
+                    .first__slide.swiper-slide
+                        a.first__link(href="#")
+                            picture.first__image
+
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/first-1@2x.webp" media="(min-width: 960px)")
+                                source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/first-1@2x.jpg" media="(min-width: 960px)")
+
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/first-1@2x.webp" media="(min-width: 640px)")
+                                source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/first-1@2x.jpg" media="(min-width: 640px)")
+
+                                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/first-1@2x.webp" )
+                                source(type="image/jpeg", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/first-1@2x.jpg" )
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/first-1.jpg" )
+
+                    .first__slide.swiper-slide
+                        a.first__link(href="#")
+                            picture.first__image
+
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/first-1@2x.webp" media="(min-width: 960px)")
+                                source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/first-1@2x.jpg" media="(min-width: 960px)")
+
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/first-1@2x.webp" media="(min-width: 640px)")
+                                source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/first-1@2x.jpg" media="(min-width: 640px)")
+
+                                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/first-1@2x.webp" )
+                                source(type="image/jpeg", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/first-1@2x.jpg" )
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/first-1.jpg" )
+
+
+                    .first__slide.swiper-slide
+                        a.first__link(href="#")
+                            picture.first__image
+
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/first-1@2x.webp" media="(min-width: 960px)")
+                                source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/first-1@2x.jpg" media="(min-width: 960px)")
+
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/first-1@2x.webp" media="(min-width: 640px)")
+                                source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/first-1@2x.jpg" media="(min-width: 640px)")
+
+                                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/first-1@2x.webp" )
+                                source(type="image/jpeg", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/first-1@2x.jpg" )
+
+                                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/first-1.jpg" )
+
+
+
+
+
+                .swiper-pagination
+
+                button.slider__nav.slider__nav_prev.swiper-button-prev
+                    != pugHelpers.Icon.call(locals, {iconName: 'slider-button-arrow', className: 'slider__nav-icon'})
+                button.slider__nav.slider__nav_next.swiper-button-next
+                    != pugHelpers.Icon.call(locals, {iconName: 'slider-button-arrow', className: 'slider__nav-icon'})
+
+                .swiper-scrollbar

@@ -1,0 +1,145 @@
+mixin popular(data)
+    section.popular
+        .popular__container.container
+            h2.popular__title Выберите проект, который Вам нравится
+
+            .popular__slider.swiper
+                .swiper-wrapper
+                    .popular__slide.swiper-slide
+                        .popular__card.card
+                            a.card__link(href="#")
+                                figure.card__image
+                                    picture
+                                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/popular-img-1@2x.webp" media="(min-width: 960px)")
+                                        source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/popular-img-1@2x.jpg" media="(min-width: 960px)")
+
+                                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/popular-img-1@2x.webp" media="(min-width: 640px)")
+                                        source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/popular-img-1@2x.jpg" media="(min-width: 640px)")
+
+                                        source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/popular-img-1@2x.webp" )
+                                        source(type="image/jpeg", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/popular-img-1@2x.jpg" )
+
+                                        img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/popular-img-1.jpg" )
+
+
+                                    .card__badge Газобетон
+
+                                    != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'card_logo'})
+
+
+                                .card__entry
+                                    .card__title Двухэтажный дом из газобетона
+                                    .card__series NB-144
+                                    ul.card__features
+                                        li.card__feature
+                                            != pugHelpers.Icon.call(locals, {iconName: 'square-icon', className: 'card__feature-icon'})
+                                            | 210 м<sub>²</sub>
+                                        li.card__feature
+                                            != pugHelpers.Icon.call(locals, {iconName: 'bathroom-icon', className: 'card__feature-icon'})
+                                            | 3
+                                        li.card__feature
+                                            != pugHelpers.Icon.call(locals, {iconName: 'bedroom-icon', className: 'card__feature-icon'})
+                                            | 3
+
+                                    .card__bottom
+                                        .card__prices
+                                            .card__price.card__price_old 41 000 ₽
+                                            .card__price 30 990 ₽
+                                        .card__more.button Подробнее
+
+                    .popular__slide.swiper-slide
+                        .popular__card.card
+                            a.card__link(href="#")
+
+                                figure.card__image
+                                    picture
+
+                                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/popular-img-2@2x.webp" media="(min-width: 960px)")
+                                        source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/popular-img-2@2x.jpg" media="(min-width: 960px)")
+
+                                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/popular-img-2@2x.webp" media="(min-width: 640px)")
+                                        source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/popular-img-2@2x.jpg" media="(min-width: 640px)")
+
+                                        source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/popular-img-2@2x.webp" )
+                                        source(type="image/jpeg", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/popular-img-2@2x.jpg" )
+
+                                        img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/popular-img-2.jpg" )
+
+                                    .card__badge Газобетон
+
+                                    != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'card_logo'})
+
+                                .card__entry
+                                    .card__title Двухэтажный дом из газобетона с сауной
+                                    .card__series NB-55
+                                    ul.card__features
+                                        li.card__feature
+                                            != pugHelpers.Icon.call(locals, {iconName: 'square-icon', className: 'card__feature-icon'})
+                                            | 210 м<sub>²</sub>
+                                        li.card__feature
+                                            != pugHelpers.Icon.call(locals, {iconName: 'bathroom-icon', className: 'card__feature-icon'})
+                                            | 3
+                                        li.card__feature
+                                            != pugHelpers.Icon.call(locals, {iconName: 'bedroom-icon', className: 'card__feature-icon'})
+                                            | 3
+
+                                    .card__bottom
+                                        .card__prices
+                                            .card__price.card__price_old 35 000 ₽
+                                            .card__price 29 000 ₽
+                                        .card__more.button Подробнее
+
+                    .popular__slide.swiper-slide
+                        .popular__card.card
+                            a.card__link(href="#")
+
+                                figure.card__image
+                                    picture
+
+                                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/popular-img-3@2x.webp" media="(min-width: 960px)")
+                                        source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/popular-img-3@2x.jpg" media="(min-width: 960px)")
+
+                                        source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/popular-img-3@2x.webp" media="(min-width: 640px)")
+                                        source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/popular-img-3@2x.jpg" media="(min-width: 640px)")
+
+                                        source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/popular-img-3@2x.webp" )
+                                        source(type="image/jpeg", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/popular-img-3@2x.jpg" )
+
+                                        img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/popular-img-3.jpg" )
+
+                                    .card__badge Газобетон
+
+                                    != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'card_logo'})
+
+                                .card__entry
+                                    .card__title Двухэтажный дом из газобетона с бассейном
+                                    .card__series NB-323
+                                    ul.card__features
+                                        li.card__feature
+                                            != pugHelpers.Icon.call(locals, {iconName: 'square-icon', className: 'card__feature-icon'})
+                                            | 210 м<sub>²</sub>
+                                        li.card__feature
+                                            != pugHelpers.Icon.call(locals, {iconName: 'bathroom-icon', className: 'card__feature-icon'})
+                                            | 3
+                                        li.card__feature
+                                            != pugHelpers.Icon.call(locals, {iconName: 'bedroom-icon', className: 'card__feature-icon'})
+                                            | 3
+
+                                    .card__bottom
+                                        .card__prices
+                                            .card__price.card__price_old 45 600 ₽
+                                            .card__price 37 900 ₽
+                                        .card__more.button Подробнее
+
+
+                .swiper-pagination
+
+                button.slider__nav.slider__nav_prev.swiper-button-prev
+                    != pugHelpers.Icon.call(locals, {iconName: 'slider-button-arrow', className: 'slider__nav-icon'})
+                button.slider__nav.slider__nav_next.swiper-button-next
+                    != pugHelpers.Icon.call(locals, {iconName: 'slider-button-arrow', className: 'slider__nav-icon'})
+
+                .swiper-scrollbar
+
+
+            a.popular__more.button(href="#") Выбрать свой проект

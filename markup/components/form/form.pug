@@ -1,0 +1,84 @@
+mixin form(data)
+    .form
+        .form__container.container
+
+            .form__entry
+                h2.form__title Не нашли, что искали?
+                .form__text Заполните форму — в ближайшее время с Вами свяжется наш менеджер и всё расскажет
+                .form__w
+
+                    .form__row
+
+                        .form__field.form__field_w_label
+                            label.form__label(for="phone-1") Телефон
+                            input.form__input#phone-1(type="text" value="" placeholder="+7 987 777 77 77" )
+
+                        button.form__submit.button(type="submit") Рассчитать стоимость
+
+                        .form__sep или
+
+                        a.form__whatsup(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'whatsapp-icon', className: 'form__whatsup-icon'})
+
+                    .form__field.form__field_privacy
+                        label.form__label
+                            input.form__checkbox(type="checkbox" value='')
+                            .form__label-text Нажимая на кнопку, вы соглашаетесь с
+                                a.form__label-link(href="#") политикой конфиденциальности
+
+
+
+
+
+mixin form-cta(data)
+    .form.form_connect
+        .form__container.container
+
+            .form__entry
+                h2.form__title Связаться
+                .form__w
+
+                    .form__row
+
+                        .form__col
+
+                            .form__field
+                                label.form__label(for="name-1") ФИО
+                                input.form__input#name-1(type="text" value="" placeholder="Сергей Петрович" )
+
+                            .form__field
+                                label.form__label(for="phone-2") Телефон
+                                input.form__input#phone-2(type="text" value="" placeholder="+7 987 777 77 77" )
+
+                            .form__field
+                                label.form__label(for="email-1") Электронная почта
+                                input.form__input#email-1(type="text" value="" placeholder="sergeypet@yandex.ru" )
+
+                        .form__col
+
+                            .form__field.form__field_message
+                                label.form__label(for="message-1") Сообщение
+                                textarea.form__input#message-1(name="" placeholder="Здравствуйте! Постройте мне дом мечты!")
+
+                            button.form__submit.button(type="submit") Отправить сообщение
+
+
+                    .form__field.form__field_privacy
+                        label.form__label
+                            input.form__checkbox(type="checkbox" value='')
+                            .form__label-text Нажимая на кнопку, вы соглашаетесь с
+                                a.form__label-link(href="#") политикой конфиденциальности
+
+
+
+            picture.form__image
+                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/cta-img@2x.webp" media="(min-width: 960px)")
+                source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/cta-img@2x.jpg" media="(min-width: 960px)")
+
+                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/cta-img@2x.webp" media="(min-width: 640px)")
+                source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/cta-img@2x.jpg" media="(min-width: 640px)")
+
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/cta-img@2x.webp" )
+                source(type="image/jpeg", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/cta-img@2x.jpg" )
+
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/cta-img.jpg" )

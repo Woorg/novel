@@ -1,0 +1,95 @@
+.header {
+
+    &__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        @include mq($small) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            justify-content: space-between;
+        }
+
+        @include mq($medium) {
+
+        }
+    }
+
+    &__social {
+        margin-right: auto;
+        max-width: 495px;
+        width: 100%;
+    }
+
+    &__logo {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        max-width: 118px;
+
+        width: 100%;
+        color: $black;
+        flex-shrink: 1;
+
+        @include mq($medium) {
+            max-width: 110px;
+        }
+
+        @include mq($medium) {
+            max-width: 175px;
+        }
+    }
+
+    &__phone {
+        margin-left: auto;
+        max-width: 495px;
+        width: 100%;
+        text-align: right;
+    }
+
+    &__nav {
+        position: relative;
+        @include mq($small) {
+
+        }
+        @include mq($medium) {
+            width: 100%;
+        }
+    }
+
+}
+
+.header__nav-appearance {
+    animation: fadeInRight .3s ease-in-out;
+}
+
+.header__nav-disappear {
+    animation: fadeOutRight .3s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%,0,0)
+  }
+
+  to {
+    opacity: 1;
+    transform: none
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%,0,0)
+  }
+}

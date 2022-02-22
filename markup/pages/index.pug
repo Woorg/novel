@@ -1,0 +1,39 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+
+    include ../components/header/header.pug
+    include ../components/nav/nav.pug
+    include ../components/first/first.pug
+    include ../components/popular/popular.pug
+    include ../components/benefits/benefits.pug
+    include ../components/appeal/appeal.pug
+    include ../components/projects/projects.pug
+    include ../components/interest/interest.pug
+    include ../components/form/form.pug
+
+    include ../components/footer/footer.pug
+
+    head
+        +head(head.defaults)
+    body.page
+        |%=symbols=%
+
+        .page__wrapper
+            +header()
+            main.page__main
+                +first()
+                +popular()
+                +benefits()
+                +appeal()
+                +projects()
+                +form()
+                +interest()
+                +form-cta()
+
+            +footer().page__footer
+
+        //- script(src='%=static=%js/separate-js/jquery.min.js' defer)
+        //- script(src='%=static=%js/separate-js/bootstrap.bundle.min.js' defer)
+        script(src='%=static=%js/main%=hash=%%=min=%.js' defer)

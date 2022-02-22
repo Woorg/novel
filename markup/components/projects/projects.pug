@@ -1,0 +1,133 @@
+mixin projects(data)
+    section.projects
+        .projects__container.container
+            h2.projects__title Посмотрите наши построенные дома
+            ul.projects__list
+                li.projects__item
+                    .projects__card.card.card_full
+                        a.card__link(href="#")
+                            figure.card__image
+                                picture
+
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/projects-img-1@2x.webp" media="(min-width: 960px)")
+                                    source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/projects-img-1@2x.jpg" media="(min-width: 960px)")
+
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/projects-img-1@2x.webp" media="(min-width: 640px)")
+                                    source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/projects-img-1@2x.jpg" media="(min-width: 640px)")
+
+                                    source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/projects-img-1@2x.webp" )
+                                    source(type="image/jpeg", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/projects-img-1@2x.jpg" )
+
+                                    img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/projects-img-1.jpg" )
+
+                                .card__badge Газобетон
+
+                                != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'card_logo'})
+
+
+                            .card__entry
+                                .card__title КП «Усадьба в Петергофе», СП Низинское, район Ломоносовский, Ленинградская область
+                                ul.card__features
+                                    li.card__feature
+                                        != pugHelpers.Icon.call(locals, {iconName: 'square-icon', className: 'card__feature-icon'})
+                                        | 210 м<sub>²</sub>
+                                    li.card__feature
+                                        != pugHelpers.Icon.call(locals, {iconName: 'bathroom-icon', className: 'card__feature-icon'})
+                                        | 3
+                                    li.card__feature
+                                        != pugHelpers.Icon.call(locals, {iconName: 'bedroom-icon', className: 'card__feature-icon'})
+                                        | 3
+
+                                .card__desc
+                                    p Здесь будет описание проекта в 1-3 строки Здесь будет описание проекта в 1-3 строки Здесь будет описание проекта в 1-3 строки Здесь будет описание проекта в 1-3 строки Здесь будет описание
+
+                                .card__time 50 дней
+
+                                .card__more.button Подробнее
+
+                li.projects__item
+                    .projects__card.card.card_full
+                        a.card__link(href="#")
+                            figure.card__image
+                                picture
+
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/projects-img-2@2x.webp" media="(min-width: 960px)")
+                                    source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/projects-img-2@2x.jpg" media="(min-width: 960px)")
+
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/projects-img-2@2x.webp" media="(min-width: 640px)")
+                                    source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/projects-img-2@2x.jpg" media="(min-width: 640px)")
+
+                                    source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/projects-img-2@2x.webp" )
+                                    source(type="image/jpeg", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/projects-img-2@2x.jpg" )
+
+                                    img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/projects-img-2.jpg" )
+
+                                .card__badge Газобетон
+
+                                != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'card_logo'})
+
+
+                            .card__entry
+                                .card__title ул. Центральная, д. Борисово, СП Раздольевское, Приозерский район, ЛО
+                                ul.card__features
+                                    li.card__feature
+                                        != pugHelpers.Icon.call(locals, {iconName: 'square-icon', className: 'card__feature-icon'})
+                                        | 250 м<sub>²</sub>
+                                    li.card__feature
+                                        != pugHelpers.Icon.call(locals, {iconName: 'bathroom-icon', className: 'card__feature-icon'})
+                                        | 3
+                                    li.card__feature
+                                        != pugHelpers.Icon.call(locals, {iconName: 'bedroom-icon', className: 'card__feature-icon'})
+                                        | 3
+
+                                .card__desc
+                                    p Здесь будет описание проекта в 1-3 строки Здесь будет описание проекта в 1-3 строки Здесь будет описание проекта в 1-3 строки Здесь будет описание проекта в 1-3 строки Здесь будет описание
+
+                                .card__time 50 дней
+
+                                .card__more.button Подробнее
+
+                li.projects__item
+                    .projects__card.card.card_full
+                        a.card__link(href="#")
+                            figure.card__image
+                                picture
+
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/projects-img-3@2x.webp" media="(min-width: 960px)")
+                                    source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/projects-img-3@2x.jpg" media="(min-width: 960px)")
+
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/projects-img-3@2x.webp" media="(min-width: 640px)")
+                                    source(type="image/jpeg", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/projects-img-3@2x.jpg" media="(min-width: 640px)")
+
+                                    source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/projects-img-3@2x.webp" )
+                                    source(type="image/jpeg", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/projects-img-3@2x.jpg" )
+
+                                    img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/content/projects-img-3.jpg" )
+
+                                .card__badge Газобетон
+
+                                != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'card_logo'})
+
+
+                            .card__entry
+                                .card__title ул. Центральная, д. Борисово, СП Раздольевское, Приозерский район, ЛО
+                                ul.card__features
+                                    li.card__feature
+                                        != pugHelpers.Icon.call(locals, {iconName: 'square-icon', className: 'card__feature-icon'})
+                                        | 410 м<sub>²</sub>
+                                    li.card__feature
+                                        != pugHelpers.Icon.call(locals, {iconName: 'bathroom-icon', className: 'card__feature-icon'})
+                                        | 7
+                                    li.card__feature
+                                        != pugHelpers.Icon.call(locals, {iconName: 'bedroom-icon', className: 'card__feature-icon'})
+                                        | 10
+
+                                .card__desc
+                                    p Здесь будет описание проекта в 1-3 строки Здесь будет описание проекта в 1-3 строки Здесь будет описание проекта в 1-3 строки Здесь будет описание проекта в 1-3 строки Здесь будет описание
+
+                                .card__time 50 дней
+
+                                .card__more.button Подробнее
+
+
+            a.projects__more.button(href="#") Остальные работы

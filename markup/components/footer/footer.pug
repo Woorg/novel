@@ -1,0 +1,69 @@
+include ../nav/nav.pug
+
+mixin footer(data)
+    footer.footer&attributes(attributes)
+        .footer__container.container
+            //- .footer__side
+
+            .footer__nav
+                .footer__nav-title Nobel.
+                +nav(nav.footerListNobel).nav_bottom
+
+            .footer__nav
+                .footer__nav-title Клиентам
+                +nav(nav.footerListClients).nav_bottom
+
+            .footer__nav
+                .footer__nav-title Информация
+                +nav(nav.footerListInfo).nav_bottom
+
+
+            .footer__contacts.contacts
+                .contacts__callback.callback
+                    a.callback__button.button(href="#") Обратный звонок
+                    .callback__text Пн–Пт с 08:00 до 18:00
+
+                ul.contacts__list
+                    li.contacts__item
+                        a.contacts__contact.phone(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'phone-2-icon', className: 'phone__icon'})
+                            | +7 987 777 77 77
+                    li.contacts__item
+                        a.contacts__contact.email(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'email-icon', className: 'email__icon'})
+                            | nobel.@gmail.com
+                    li.contacts__item
+                        a.contacts__contact.location(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'location-icon', className: 'location__icon'})
+                            | г. Санкт-Петербург, ул. Улица, дом 77, офис 77
+
+
+            .footer__bottom
+
+                a.footer__logo.logo(href="#")
+                    != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
+
+                .footer__text Прежде всего, социально-экономическое развитие требует определения и уточнения модели развития. Но сплочённость.
+
+
+                .footer__links
+                    .footer__link ИНН / КПП 5452564627 / 775425001
+                    a.footer__link(href="#") Политика конфеденциальности
+
+            .footer__social.social
+                ul.social__list
+                    li.social__item
+                        a.social__link(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'telegram-icon', className: 'social__icon'})
+                    li.social__item
+                        a.social__link(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'social__icon'})
+                    li.social__item
+                        a.social__link(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'whatsapp-icon', className: 'social__icon'})
+                    li.social__item
+                        a.social__link(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'youtube-icon', className: 'social__icon'})
+                    li.social__item
+                        a.social__link(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'instagram-icon', className: 'social__icon'})

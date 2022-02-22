@@ -1,0 +1,33 @@
+mixin header(data)
+    header.header&attributes(attributes)
+        .header__container.container
+            .header__social.social
+                ul.social__list
+                    li.social__item
+                        a.social__link(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'telegram-icon', className: 'social__icon'})
+                    li.social__item
+                        a.social__link(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'social__icon'})
+                    li.social__item
+                        a.social__link(href="#")
+                            != pugHelpers.Icon.call(locals, {iconName: 'whatsapp-icon', className: 'social__icon'})
+
+            a.header__logo.logo(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
+
+            a.header__phone.phone(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'phone-icon', className: 'phone__icon'})
+                | +7 987 777 77 77
+
+            .header__nav
+
+                button.header__catalog
+                    | Каталог проектов
+                    != pugHelpers.Icon.call(locals, {iconName: 'burger-icon', className: 'header__catalog-icon'})
+
+                +nav(nav.primaryList).nav_primary
+
+                form.header__search.search
+                    input.search__input(type="text" value="" placeholder="Номер проекта")
+                    button.search__button(type="submit")

@@ -1,0 +1,45 @@
+mixin benefits(data)
+    section.benefits
+        .benefits__container
+            h2.benefits__title Нам доверяют потому, что мы...
+            .benefits__plan
+                .benefits__item
+                    .benefits__entry
+                        != pugHelpers.Icon.call(locals, {iconName: 'payment-icon', className: 'benefits__entry-icon'})
+                        .benefits__entry-title Бесплатно проектируем
+                        .benefits__entry-text Постоплатная система расчета на строительство дома. Вы платите только за фактически
+
+                .benefits__item
+                    .benefits__entry
+                        != pugHelpers.Icon.call(locals, {iconName: 'payment-icon', className: 'benefits__entry-icon'})
+                        .benefits__entry-title Принимаем оплату после строительства система
+                        .benefits__entry-text Постоплатная система расчета на строительство дома. Вы платите только за фактически принятые Вами этапы работ
+
+                .benefits__item
+                    .benefits__entry
+                        != pugHelpers.Icon.call(locals, {iconName: 'payment-icon', className: 'benefits__entry-icon'})
+                        .benefits__entry-title даем Гарантию 10 лет
+                        .benefits__entry-text Постоплатная система расчета
+
+                .benefits__item
+                    .benefits__entry
+                        != pugHelpers.Icon.call(locals, {iconName: 'payment-icon', className: 'benefits__entry-icon'})
+                        .benefits__entry-title принимаем проверки независимого технадзора
+                        .benefits__entry-text Постоплатная система расчета на строительство дома. Вы платите только
+
+                .benefits__item
+                    .benefits__entry
+                        != pugHelpers.Icon.call(locals, {iconName: 'payment-icon', className: 'benefits__entry-icon'})
+                        .benefits__entry-title Даем точную смету, которая экономит ваши деньги
+                        .benefits__entry-text Постоплатная система расчета на строительство дома. Вы платите только за фактически
+
+                .benefits__item
+                    .benefits__entry
+                        != pugHelpers.Icon.call(locals, {iconName: 'payment-icon', className: 'benefits__entry-icon'})
+                        .benefits__entry-title 20 лет наши рабочие строят здания любой сложности
+                        .benefits__entry-text Предварительные выводы неутешительны: существующая теория создаёт предпосылки для поэтапного
+
+
+            .benefits__cta
+                .benefits__cta-title
+                a.benefits__cta-button(href="#") Смотреть проект
