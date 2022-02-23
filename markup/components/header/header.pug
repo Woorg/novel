@@ -31,3 +31,4 @@ mixin header(data)
                 form.header__search.search
                     input.search__input(type="text" value="" placeholder="Номер проекта")
                     button.search__button(type="submit")
+                        != pugHelpers.Icon.call(locals, {iconName: 'search-icon', className: 'search__icon'})

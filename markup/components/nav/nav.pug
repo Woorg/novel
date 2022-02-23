@@ -18,8 +18,7 @@ mixin nav(data)
 
                 li(class=`${itemClass} ${itemClassMod}`)
 
-                    a.nav__link(href=item.href)
-                        span.nav__link-text #{item.title}
+                    a.nav__link(href=item.href) #{item.title}
 
                     if subnavList
 

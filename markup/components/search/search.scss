@@ -1,1 +1,35 @@
+.search {
+    position: relative;
+    height: 60px;
+    &__input,
+    &__button {
+        @include resetbutton();
+        height: 100%;
 
+    }
+    &__input {
+        padding-top: 18px;
+        padding-right: 20px;
+        padding-left: 50px;
+        padding-bottom: 18px;
+        width: 100%;
+        @include placeholder() {
+            color: #c4c4c4;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__icon {
+        @include resetbutton();
+        height: 100%;
+
+    }
+
+}

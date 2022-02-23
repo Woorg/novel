@@ -23,12 +23,14 @@
         margin-right: auto;
         max-width: 495px;
         width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
 
     &__logo {
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         max-width: 118px;
 
         width: 100%;
@@ -48,11 +50,60 @@
         margin-left: auto;
         max-width: 495px;
         width: 100%;
+        font-size: 18px;
+        font-weight: 600;
         text-align: right;
     }
 
+    &__catalog {
+        @include resetbutton();
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-weight: normal;
+        text-align: left;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    &__catalog-icon {
+        margin-left: 10px;
+    }
+
+    &__search {
+        max-width: 186px;
+        width: 100%;
+        // height: 60px;
+
+    }
+
+
     &__nav {
         position: relative;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:after,
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            content: '';
+            width: 3000px;
+            height: 1px;
+            background: $gray;
+            transform: translateX(-50%);
+        }
+
+        &:after {
+            top: auto;
+            bottom: 0;
+        }
+
+
         @include mq($small) {
 
         }
